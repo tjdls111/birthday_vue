@@ -1,0 +1,111 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# Created by https://www.toptal.com/developers/gitignore/api/windows,git,visualstudiocode,vuejs
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,git,visualstudiocode,vuejs
+
+### Git ###
+# Created by git for backups. To disable backups in Git:
+# $ git config --global mergetool.keepBackup false
+*.orig
+
+# Created by git when using merge tools for conflicts
+*.BACKUP.*
+*.BASE.*
+*.LOCAL.*
+*.REMOTE.*
+*_BACKUP_*.txt
+*_BASE_*.txt
+*_LOCAL_*.txt
+*_REMOTE_*.txt
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# Support for Project snippet scope
+.vscode/*.code-snippets
+
+# Ignore code-workspaces
+*.code-workspace
+
+### Vuejs ###
+# Recommended template: Node.gitignore
+
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/windows,git,visualstudiocode,vuejs
+# Created by https://www.toptal.com/developers/gitignore/api/windows,git,visualstudiocode,vuejs # Edit at https://www.toptal.com/developers/gitignore?templates=windows,git,visualstudiocode,vuejs ### Git ### # Created by git for backups. To disable backups in Git: # $ git config --global mergetool.keepBackup false *.orig # Created by git when using merge tools for conflicts *.BACKUP.* *.BASE.* *.LOCAL.* *.REMOTE.* *_BACKUP_*.txt *_BASE_*.txt *_LOCAL_*.txt *_REMOTE_*.txt ### VisualStudioCode ### .vscode/* !.vscode/settings.json !.vscode/tasks.json !.vscode/launch.json !.vscode/extensions.json !.vscode/*.code-snippets # Local History for Visual Studio Code .history/ # Built Visual Studio Code Extensions *.vsix ### VisualStudioCode Patch ### # Ignore all local history of files .history .ionide # Support for Project snippet scope .vscode/*.code-snippets # Ignore code-workspaces *.code-workspace ### Vuejs ### # Recommended template: Node.gitignore node_modules/ dist/ npm-debug.log yarn-error.log ### Windows ### # Windows thumbnail cache files Thumbs.db Thumbs.db:encryptable ehthumbs.db ehthumbs_vista.db # Dump file *.stackdump # Folder config file [Dd]esktop.ini # Recycle Bin used on file shares $RECYCLE.BIN/ # Windows Installer files *.cab *.msi *.msix *.msm *.msp # Windows shortcuts *.lnk # End of https://www.toptal.com/developers/gitignore/api/windows,git,visualstudiocode,vuejs Eng
+
+# 생성: https://www.toptal.com/developers/gitignore/api/windows,git,visualstudiocode,vuejs # https://www.toptal.com/developers/gitignore?templates=windows,git,visualstudiocode,vuejs에서 편집 ### 힘내 ### # 백업을 위해 git에 의해 생성되었습니다. Git에서 백업을 비활성화하려면: # $ git config --global mergetool.keepBackup false *.orig # 충돌에 대해 병합 도구를 사용할 때 git에 의해 생성됨 *.지원.* *.베이스.* *.현지.* *.원격.* *_BACKUP_*.txt *_BASE_*.txt *_LOCAL_*.txt *_REMOTE_*.txt ### VisualStudioCode ### .vscode/* !.vscode/settings.json !.vscode/tasks.json !.vscode/launch.json !.vscode/extensions.json !.vscode/*.code-snippets # Visual Studio Code의 로컬 기록 .역사/ # Visual Studio 코드 확장 빌드 *.vsix ### VisualStudioCode 패치 ### # 파일의 모든 로컬 기록 무시 .역사 .이오나이드 # 프로젝트 스니펫 범위 지원 .vscode/*.code-snippets # 코드 작업 공간 무시 *.code-작업 공간 ### 뷰지 ### # 권장 템플릿: Node.gitignore node_modules/ 거리/ npm-debug.log 원사 오류.로그 ### 윈도우 ### # Windows 썸네일 캐시 파일 Thumbs.db Thumbs.db:암호화 가능 ehthumbs.db ehthumbs_vista.db # 덤프 파일 *.스택 덤프 # 폴더 설정 파일 [Dd]esktop.ini # 파일 공유에 사용되는 휴지통 $RECYCLE.BIN/ # 윈도우 인스톨러 파일 *.택시 *.msi *.msix *.msm *.msp # 윈도우 단축키 *.lnk # https://www.toptal.com/developers/gitignore/api/windows,git,visualstudiocode,vuejs 끝
