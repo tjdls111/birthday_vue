@@ -10,7 +10,6 @@ import collection from "easter-egg-collection";
 const app = createApp(App);
 // app.use(VueTypedJs);
 app.use(collection);
-
 app.use(BootstrapVue3);
 app.use(router);
 

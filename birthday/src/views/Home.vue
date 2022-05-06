@@ -21,8 +21,6 @@ export default {
   },
   methods: {},
 };
-
-console.log("hi");
 </script>
 
 <style></style>
