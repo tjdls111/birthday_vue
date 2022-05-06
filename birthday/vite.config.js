@@ -11,6 +11,6 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  publicPath: "/birthday/dist/",
-  outputDir: "./docs",
+  // publicPath: "/birthday_vue/",
+  // outputDir: "./docs",
 });
