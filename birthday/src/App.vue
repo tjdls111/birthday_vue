@@ -22,13 +22,17 @@ import { RouterLink, RouterView } from "vue-router";
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <RouterLink to="/">홈</RouterLink>
+                <RouterLink class="a nav-link" to="/">홈</RouterLink>
               </li>
               <li class="nav-item">
-                <RouterLink to="/random">선물이 고민된다면? 🎁</RouterLink>
+                <RouterLink class="a nav-link" to="/random"
+                  >선물이 고민된다면? 🎁</RouterLink
+                >
               </li>
               <li class="nav-item">
-                <RouterLink to="/photo">우리의 추억 🥳</RouterLink>
+                <RouterLink class="a nav-link" to="/photo"
+                  >우리의 추억 🥳</RouterLink
+                >
               </li>
             </ul>
           </div>
@@ -42,4 +46,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 <style>
 @import "@/assets/base.css";
+.a {
+  text-decoration: none;
+}
 </style>
