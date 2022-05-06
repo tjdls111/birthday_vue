@@ -12,5 +12,5 @@ export default defineConfig({
     },
   },
   publicPath: "/birthday_vue",
-  outputDir: "docs",
+  outputDir: "./docs",
 });
