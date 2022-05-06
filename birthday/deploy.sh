@@ -1,25 +1,19 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
-# abort on errors
-set -e
+set -e # 도중에 오류 발생시 스크립트를 종료한다.
 
-# build
+echo ">> 빌드를 시작합니다 <<"
 npm run build
 
-# navigate into the build output directory
+echo ">> 빌드 Directory로 이동 <<"
 cd dist
 
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
-
+echo ">> git init <<"
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m "Deploy"
 
-# if you are deploying to https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
+echo ">> git push <<"
+git push -f https://github.com/tjdls111/birthday_vue.git master:gh-pages
 
-# if you are deploying to https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
-
-cd -
+cd ..
