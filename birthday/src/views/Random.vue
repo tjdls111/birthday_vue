@@ -1,9 +1,13 @@
 <template>
-  <div class="random">
-    <h2 class="text-center">랜덤 선물~</h2>
-    <ul>
-      <li v-for="item in items" v-bind:key="item.name">
-        <button @click="onClickRedirect(item.name)">
+  <div class="container random">
+    <h2 class="text-center">선물 추천 ^_^</h2>
+    <ul class="row">
+      <li class="mt-5 col-sm" v-for="item in items" v-bind:key="item.name">
+        <button
+          type="button"
+          class="btn btn-info"
+          @click="onClickRedirect(item.name)"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
@@ -33,6 +37,8 @@ export default {
         },
         { name: "c6d9f322-10d8-4123-ac7e-b6bdc6b307aa" },
         { name: "8a888238-7ce9-4eed-bfdb-58f4829ba5f6" },
+        { name: "f4b55567-42a8-471e-9d5a-e969e7e54260" },
+        { name: "029e491b-ffc5-47de-a6bf-d81a18da671f" },
       ],
     };
   },
@@ -44,4 +50,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+ul {
+  list-style: none;
+}
+</style>
