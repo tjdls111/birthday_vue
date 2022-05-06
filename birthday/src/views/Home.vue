@@ -1,5 +1,7 @@
 <template>
-  <div>home</div>
+  <div class="container">
+    <img src="../assets/main.png" alt="" />
+  </div>
 </template>
 
 <script>
@@ -11,4 +13,7 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.container {
+}
+</style>
