@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
     <button type="button" class="btn btn-warning" @click="onClickRedirect">
-      우리들의 추억 보러 가기!
+      우리들의 추억 보러 가기~~
     </button>
   </div>
 </template>
