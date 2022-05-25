@@ -3,7 +3,7 @@ import HomeView from "../views/Home.vue";
 import RandomView from "../views/Random.vue";
 import PhotoView from "../views/Photo.vue";
 const router = createRouter({
-  history: createWebHistory("http://localhost:8080/"),
+  history: createWebHistory(""),
   routes: [
     {
       path: "/",
