@@ -1,10 +1,7 @@
-<script setup>
-import { RouterLink, RouterView } from "vue-router";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
-    <router-view></router-view>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
