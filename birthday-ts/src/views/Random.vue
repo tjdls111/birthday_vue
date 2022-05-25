@@ -26,7 +26,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "RandomView",
   data: function () {
@@ -43,7 +43,7 @@ export default {
     };
   },
   methods: {
-    onClickRedirect: function (name) {
+    onClickRedirect: function (name: string) {
       window.open(`https://www.idus.com/w/product/${name}`, "_blank");
     },
   },

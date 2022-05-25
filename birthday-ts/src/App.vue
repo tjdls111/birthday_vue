@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <div>
     <header>
@@ -41,6 +39,8 @@
     <RouterView />
   </div>
 </template>
+
+<script setup lang="ts"></script>
 
 <style>
 @import "@/assets/base.css";
