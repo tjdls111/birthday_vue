@@ -4,6 +4,7 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <div>
+    <router-view></router-view>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
