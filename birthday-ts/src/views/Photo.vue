@@ -10,6 +10,7 @@
 export default {
   name: "PhotoView",
   components: {},
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   data: function () {},
   methods: {
     onClickRedirect: function () {
