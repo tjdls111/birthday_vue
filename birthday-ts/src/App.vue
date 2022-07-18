@@ -30,6 +30,11 @@
                   >우리의 추억 🥳</RouterLink
                 >
               </li>
+              <li class="nav-item">
+                <RouterLink class="a nav-link" to="/message"
+                  >따듯한 메시지 💕</RouterLink
+                >
+              </li>
             </ul>
           </div>
         </div>

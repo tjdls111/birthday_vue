@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 <template>
   <div class="container random">
     <h2 class="text-center">선물 추천 ^_^</h2>
@@ -23,6 +24,21 @@
         </button>
       </li>
     </ul>
+    <p id="today"></p>
+    <div id="pi" class="alert alert-primary"></div>
+    <py-script>
+      <!-- import datatime as dt;
+      pyscript.write('today', '오늘은')
+
+      def compute_pi(n):
+          pi = 2
+          for i in range(1,n):
+              pi *= 4 * i ** 2 / (4 * i ** 2 - 1)
+          return pi
+
+      pi = compute_pi(100000)
+      pyscript.write('pi', f'π is approximately {pi:.3f}') -->
+    </py-script>
   </div>
 </template>
 
