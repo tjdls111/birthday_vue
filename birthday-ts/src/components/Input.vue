@@ -30,4 +30,8 @@ const setValue = (event: InputEvent | Event): void => {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+input {
+  border: 1px solid black;
+}
+</style>
