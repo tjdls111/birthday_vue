@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 
 const emit = defineEmits(["setValue"]);
 
@@ -19,6 +19,7 @@ const props = defineProps<{
     type: string;
     placeholder?: string;
     value?: string;
+    index?: number;
   };
 }>();
 
