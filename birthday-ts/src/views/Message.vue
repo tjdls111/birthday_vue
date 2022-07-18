@@ -1,23 +1,43 @@
 <template>
-  <div class="text-center">
-    <button type="button" class="btn btn-warning" @click="onClickRedirect">
-      우리들의 추억 보러 가기~~
-    </button>
+  <div>
+    <h1>메시지</h1>
+    <InputGroup :attrs="inputAttrs" />
+    <hr />
+    <InputGroup :attrs="inputAttrs2" />
   </div>
 </template>
 
-<script lang="ts">
-export default {
-  name: "PhotoView",
-  components: {},
-  // eslint-disable-next-line @typescript-eslint/no-empty-function
-  data: function () {},
-  methods: {
-    onClickRedirect: function () {
-      window.open(`https://forms.gle/49T3xNGyyxVWoB3g8`, "_blank");
-    },
+<script lang="ts" setup>
+import InputGroup from "@/components/InputGroup.vue";
+const inputAttrs = [
+  {
+    label: "nickname",
+    type: "text",
+    placeholder: "nickname을 입력하세요",
+    value: "",
   },
-};
+  {
+    label: "message",
+    type: "text",
+    placeholder: "message을 입력하세요",
+    value: "",
+  },
+];
+
+const inputAttrs2 = [
+  {
+    label: "email",
+    type: "text",
+    placeholder: "email을 입력하세요",
+    value: "",
+  },
+  {
+    label: "mbti",
+    type: "text",
+    placeholder: "mbti를 입력하세요",
+    value: "",
+  },
+];
 </script>
 
 <style></style>
