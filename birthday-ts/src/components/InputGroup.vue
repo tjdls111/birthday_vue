@@ -2,7 +2,12 @@
   <div>
     <ul>
       <li v-for="(item, idx) in props.attrs" :key="idx" ref="inputsRef">
-        <Input :attr="item" @setValue="setValue" />
+        <Input
+          :groupIndex="props.index"
+          :itemIndex="idx"
+          :attr="item"
+          @setValue="setValue"
+        />
       </li>
     </ul>
   </div>

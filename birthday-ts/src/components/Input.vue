@@ -5,15 +5,18 @@
     :placeholder="props.attr.placeholder"
     :value="props.attr.value"
     @input="(event) => setValue(event)"
+    ref="inputEl"
   />
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { ref, inject, onMounted, watch } from "vue";
 
 const emit = defineEmits(["setValue"]);
 
 const props = defineProps<{
+  groupIndex?: number;
+  itemIndex?: number;
   attr: {
     label?: string;
     type: string;
@@ -24,11 +27,29 @@ const props = defineProps<{
 }>();
 
 const inputValue = ref<string>("");
+const inputEl = ref<HTMLInputElement | null>(null);
+
 const setValue = (event: InputEvent | Event): void => {
   const target: HTMLInputElement = event.target as HTMLInputElement;
   inputValue.value = target.value;
   emit("setValue", inputValue.value);
 };
+
+const targetGroupIndex = inject("targetGroupIndex");
+const targetItemIndex = inject("targetItemIndex");
+
+const focusOnTargetInputEl = () => {
+  if (
+    targetGroupIndex === props.groupIndex &&
+    targetItemIndex === props.itemIndex
+  ) {
+    inputEl.value?.focus();
+  }
+};
+
+onMounted(() => {
+  focusOnTargetInputEl();
+});
 </script>
 
 <style lang="scss" scoped>
